@@ -1,0 +1,332 @@
+<style>
+/*===========
+|	FONTS	|
+===========*/
+/*--------------------------------------
+LIST:
+class="medium-font" 	font-family: campton-medium, Trebuchet MS, Arial, sans-serif!important;
+class="book-font" 		font-family: campton-book, Trebuchet MS, Arial, sans-serif!important;
+class="black-font" 		font-family: campton-black, Trebuchet MS, Arial, sans-serif!important;
+class="semibold-font" 	font-family: campton-semibold, Trebuchet MS, Arial, sans-serif!important;
+class="bold-font" 		font-family: campton-bold, Trebuchet MS, Arial, sans-serif!important;
+class="extrabold-font" 	font-family: campton-extrabold, Trebuchet MS, Arial, sans-serif!important;
+class="thin-font"		font-family: campton-thin, Trebuchet MS, Arial, sans-serif!important;
+--------------------------------------*/
+@font-face{
+	font-family:'acromregular';
+	src:url("https://www.bbclothing.co.uk/skin/frontend/csg/brownbag/fonts/the_northern_block_-_acrom-webfont.eot");
+	src:url("https://www.bbclothing.co.uk/skin/frontend/csg/brownbag/fonts/the_northern_block_-_acrom-webfont.eot?#iefix") format("embedded-opentype"),url("https://www.bbclothing.co.uk/skin/frontend/csg/brownbag/fonts/the_northern_block_-_acrom-webfont.woff2") format("woff2"),url("https://www.bbclothing.co.uk/skin/frontend/csg/brownbag/fonts/the_northern_block_-_acrom-webfont.woff") format("woff"),url("https://www.bbclothing.co.uk/skin/frontend/csg/brownbag/fonts/the_northern_block_-_acrom-webfont.ttf") format("truetype"),url("https://www.bbclothing.co.uk/skin/frontend/csg/brownbag/fonts/the_northern_block_-_acrom-webfont.svg#acromregular") format("svg");
+	font-weight:normal;
+	font-style:normal
+}
+@font-face {
+	font-family: campton-medium;
+	src: url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-medium.woff") format("woff"),
+		url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-medium.woff2") format("woff2");
+}
+@font-face {
+	font-family: campton-book;
+	src: url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-book.woff") format("woff"),
+		url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-book.woff2") format("woff2");
+}
+@font-face {
+	font-family: campton-black;
+	src: url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-black.woff") format("woff"),
+		url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-black.woff2") format("woff2");
+}
+@font-face {
+	font-family: campton-semibold;
+	src: url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-semibold.woff") format("woff"),
+		url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-semibold.woff2") format("woff2");
+}
+@font-face {
+	font-family: campton-bold;
+	src: url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-bold.woff") format("woff"),
+		url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-bold.woff2") format("woff2");
+}
+@font-face {
+	font-family: campton-extrabold;
+	src: url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-extrabold.woff") format("woff"),
+		url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-extrabold.woff2") format("wof2");
+}
+@font-face {
+	font-family: campton-thin;
+	src: url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-thin.woff") format("woff"),
+		url("https://media.clothingsites.co.uk/media/clientstyles/css-resource/fonts/campton-thin.woff2") format("woff2");
+}
+.thin-font {
+	font-family: campton-thin, Trebuchet MS, Arial, sans-serif!important;
+}
+.medium-font {
+	font-family: campton-medium, Trebuchet MS, Arial, sans-serif!important;
+}
+.book-font {
+	font-family: campton-book, Trebuchet MS, Arial, sans-serif!important;
+}
+.black-font {
+	font-family: campton-black, Trebuchet MS, Arial, sans-serif!important;
+}
+.semibold-font {
+	font-family: campton-semibold, Trebuchet MS, Arial, sans-serif!important;
+}
+.bold-font {
+	font-family: campton-bold, Trebuchet MS, Arial, sans-serif!important;
+}
+.extrabold-font {
+	font-family: campton-extrabold, Trebuchet MS, Arial, sans-serif!important;
+}
+/*---- FONTS ----*/
+
+* {
+	padding: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+/* BUTTON STYLE */
+.button {
+	-webkit-box-flex: 1;
+	  -ms-flex: 1 1 auto;
+		  flex: 1 1 auto;
+	margin: 10px;
+	padding: 20px;
+	border: 2px solid #f7f7f7;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: 0.6s;
+	transition: 0.6s;
+}
+
+	.button:after {
+		position: absolute;
+		-webkit-transition: 0.6s;
+		transition: 0.6s;
+		content: "";
+		width: 0;
+		left: 50%;
+		bottom: 0;
+		height: 3px;
+		background: #f7f7f7;
+	}
+	
+	.button:hover {
+		cursor: pointer;
+		border-radius: 26px;
+	}
+	
+		.button:hover:after {
+			width: 100%;
+			left: 0;
+		}
+/*
+		.button:hover {
+			border-radius: 26px;
+		}
+		.button:hover:after {
+			width: 0%;
+		}
+*/
+/* END BUTTON STYLE */
+
+#justify-yourself {
+	width: 80%;
+	height: auto;
+	max-width: 1248px;
+	
+	margin: 0 auto;
+	padding: 0;
+	
+	position: relative;
+	display: block;
+	
+	text-align: center;
+}
+
+#justify-button {
+	width: 100%;
+	max-width: 400px;
+	height: 52px;
+	
+	margin: 50px auto;
+	padding: 15px;
+	
+	position: relative;
+	display: inline-block;
+	
+	border: 1px solid #070707;
+	background-color: red;
+	color: white;
+	
+	font-size: 20px;
+	text-align: center;
+}
+	#justify-button:hover {
+		background-color: #3f3f3f;
+		color: #fff;
+		box-shadow: 3px 5px #c7c7c7;
+	}
+
+#justifiable-text {
+	width: 100%;
+	height: auto;
+	
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-left: 0vw;
+	
+	position: relative;
+	display: inline-block;
+	
+	font-size: 3.8vw;
+	text-align: center;
+-webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+	 -o-transition: all 1s ease;
+		transition: all 1s ease;
+}
+	.justified-text {
+		letter-spacing: 3.3vw;
+		text-align: justify;
+	}
+
+		@media screen and (max-width: 500px) {
+			#justifiable-text {
+				padding-left: 2.8vw;
+			}
+		}
+		@media screen and (min-width: 501px) and (max-width: 800px) {
+			#justifiable-text {
+				padding-left: 1.7vw;
+			}
+		}
+		@media screen and (min-width: 1571px) {
+			#justifiable-text {
+				padding-left: 0;
+				font-size: 58px;
+			}
+		
+			.justified-text {
+				letter-spacing: 53px;
+			}
+		}
+		
+		div[data-active="true"] {
+			background-color: #33cc33!important;
+		}
+		div[data-active="true"]:hover {
+			background-color: #2dc606!important;
+		}
+		div[data-active="false"] {
+			background-color: #3f3f3f;
+		}
+	
+#congratulations-message {
+	margin: 50px auto;
+
+-webkit-transition: all 1s ease 0.8s;
+   -moz-transition: all 1s ease 0.8s;
+	 -o-transition: all 1s ease 0.8s;
+		transition: all 1s ease 0.8s;
+		
+	opacity: 0;
+	
+	font-size: 2vw;
+}
+	@media screen and (min-width: 1571px) {
+		#congratulations-message {
+			font-size: 32px;
+			color: #2dc606;
+	}
+	
+</style>
+
+<div id="justify-yourself">
+	<div id="justify-button" class="button medium-font" data-active="false">
+		JUSTIFY
+	</div>
+	<div id="justifiable-text" class="bold-font">
+		Y O U R S E L F
+	</div>
+	
+	<div id="div-classes">
+	</div>
+	
+	<div id="congratulations-message" class="medium-font">
+		Congratulations!
+	</div>
+</div>
+
+<script>
+// LIBRARY
+
+	// ADDING TO, REMOVING FROM & GATHERING A CLASS LIST
+	// pass the elements name and the class you want to add and remove
+	function Add_Class( el, newClassName ) {
+		if ( el.className.length ) {
+			if ( el.className.match( newClassName ) ) {
+				return;
+			} else {
+				el.className += ' ';
+			}
+		}
+		el.className += newClassName;
+		console.log(newClassName);
+	}
+	
+	function Remove_Class( el, oldClassName ) {
+		if ( el.className.length ) {
+			var classRegExp = new RegExp( '\\s?' + oldClassName, 'g' );
+			console.log(classRegExp);
+			el.className = el.className.replace(classRegExp, '');
+		} else {
+			console.warn( oldClassName + ' : Class cannot be removed!' )
+		}
+	}
+	
+	function Gather_Classes( el ) {
+		if ( el ) {
+			var gatheredClasses = el.className.split(' ');
+			
+			return gatheredClasses;
+		}
+	}
+	// END OF
+	// ADDING AND REMOVING A CLASS
+	
+// END OF
+// LIBRARY
+
+// PAGE SCRIPT
+	(function(){
+		var justifyButton = document.getElementById( 'justify-button' );
+		var justifiableText = document.getElementById( 'justifiable-text' );
+		var divClasses = document.getElementById( 'div-classes' );
+		var congratulationsMessage = document.getElementById( 'congratulations-message' );
+		
+		justifyButton.addEventListener( 'click', function(){
+		
+			if ( justifiableText.className.match( 'justified-text' ) ) {
+				justifyButton.innerHTML = 'JUSTIFY';
+				if ( justifyButton.getAttribute( 'data-active' ) == 'true' ) {
+					justifyButton.setAttribute( 'data-active', false );
+				}
+				Remove_Class( justifiableText, 'justified-text' );
+				congratulationsMessage.style.opacity = 0;
+			} else {
+				justifyButton.innerHTML = 'You JUSTIFIED';
+				if ( justifyButton.getAttribute( 'data-active' ) == 'false' ) {
+					justifyButton.setAttribute( 'data-active', true );
+				}
+				Add_Class( justifiableText, 'justified-text' );
+				congratulationsMessage.style.opacity = 1;
+			};
+			
+			//divClasses.innerHTML = Gather_Classes( justifiableText );
+			
+		});
+	})();
+// END OF
+// PAGE SCRIPT	
+</script>
