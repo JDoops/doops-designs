@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0073)http://www.citywesthousingtrust.exvn.com/forms/bourkeGardens0416_2.cfm?id -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<title>Bourke Gardens | City West</title>
+<link href="http://files.evmailer.net/citywesthousingtrust/images/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./bourke-gardens_city-west_files/styles.css">
+<script src="./bourke-gardens_city-west_files/jquery.min.js"></script><!-- JQUERY -->
+<script src="./bourke-gardens_city-west_files/jquery-ui.min.js"></script><!-- JQUERY UI -->
+
+
+<!-- jQuery validation -->
+<script src="./bourke-gardens_city-west_files/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+<script src="./bourke-gardens_city-west_files/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="./bourke-gardens_city-west_files/validationEngine.jquery.css">
+
+
+<style type="text/css">
+
+@media only screen and (max-width: 480px){
+table[class=full-width], img[class=full-width], table[class=full-width_footer], a[class=full-width], div[class=full-width], input[class=full-width], textarea[class=full-width]{width:100% !important; height:auto !important;}
+table[class=half-width], img[class=half-width], table[class=half-width_footer], a[class=half-width], div[class=half-width]{width:50% !important; height:auto !important;}
+table[class=full-width-margin]{width:100% !important; height:auto !important; margin:0 0 20px 0 !important;}
+td[class=singleColumn]{width:100% !important; float:left !important;}
+a[class=emailfooterlinks]{font-size:14px !important;}
+table[class=hide],td[class=hide],span[class=hide]{display:none !important;}
+td[class=footer_text],a[class=footer_text]{font-size:11px !important;}
+td[class=spacer],img[class=spacer]{width:20px !important; height:20px !important;}
+td[class=contact], a[class=contact]{font-size:14px;}
+span[class=number], span a[class=number]{color:#666666 !important; text-decoration:none !important;}
+div[class=show]{display:block !important;}
+td[class=MobHeadTxt], a[class=MobHeadTxt], span[class=MobHeadTxt]{font-size:24px !important;}
+td[class=MobBodyTxt], a[class=MobBodyTxt], span[class=MobBodyTxt]{font-size:16px !important;}
+td[class=smallTxt], a[class=smallTxt], span[class=smallTxt]{font-size:11px !important;}
+td, a, span{-webkit-text-size-adjust:none;}
+
+td[class=justifyOnMobile]{ text-align:justify !important;}  
+td[class=centerOnMobile]{ text-align:center !important;} 
+
+td[class=mobileHeight]{height:auto; !important;}
+table[class=singleColumnMobileShow]{display:block !important; visibility:visible !important; overflow:auto !important; width:100% !important; height: auto !important; max-height:none !important;}
+div[class=singleColumnMobileShow]{display:block !important; visibility:visible !important; overflow:auto !important; width:100% !important; height: auto !important; max-height:none !important;}
+   
+.input-box {width:240px !important;}
+
+.buttons
+{
+width:100% !important;
+}
+
+}
+  
+a:visited {
+
+color:#f58220
+
+}
+
+input[type="text"] {
+  margin: 0;
+  padding:2px;
+  font-family:Arial, Helvetica, sans-serif;
+  width: 70%;
+  font-size: 12px;
+  resize:none!important;
+  overflow:hidden!important;
+  -ms-overflow-style: none!important;
+  
+}
+
+input[type="textarea"] {
+  margin: 0;
+  padding:2px;
+  font-family:Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 12px;
+  resize:none!important;
+  overflow:hidden!important;
+  -ms-overflow-style: none!important;
+  
+}
+
+.buttons
+{
+border:none;
+background-color:#f26522;
+color:#ffffff;
+display:inline-block;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight:bold;
+line-height:40px;
+text-align:center;
+text-decoration:none;
+width:300px;
+-webkit-text-size-adjust:none;
+}
+
+.buttons:hover
+{
+background-color:#d55b21;
+border:none;
+color:#ffffff;
+display:inline-block;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+font-weight:bold;
+line-height:40px;
+text-align:center;
+text-decoration:none;
+width:300px;
+-webkit-text-size-adjust:none;
+}
+
+body
+{
+margin:0;
+padding:0;
+background-color:#DDDDDD}
+
+input[type="submit"]:hover
+{cursor:pointer !important;}
+
+.formError .formErrorContent 
+{background:#444444; box-shadow:none; font-family:Arial, Helvetica, sans-serif; font-size:13px; border:none;}
+
+.formError .formErrorArrow div 
+{border-left:none; border-right:none; background:#444444; box-shadow:none;}
+
+</style>
+
+
+<script>
+
+// Start of word limiter
+
+function taLimit(event) {
+
+    // IE and Opera
+    if(event.srcElement)
+    {
+	  var taObj=event.srcElement;
+	  if (taObj.value.length>taObj.getAttribute("maxLength")) return false;
+	}
+	// Netscape and Firefox
+	else
+	{
+	  var taObj=event.target;
+	  if (taObj.value.length>taObj.getAttribute("maxLength")) return false;
+	}
+
+	return true;
+}
+
+function taCount(event,counter) 
+{
+
+    // IE and Opera
+ if(event.srcElement)
+ {
+      var taObj = event.srcElement;
+   var maxlength = taObj.getAttribute("maxLength");
+
+      if (taObj.value.length > maxlength) 
+
+    taObj.value=taObj.value.substring(0,maxlength);
+      counter.innerText=maxlength-taObj.value.length;
+    }
+    // Netscape and Firefox
+    else
+    {
+      var taObj = event.target;
+      if (taObj.value.length > taObj.getAttribute("maxlength")) 
+
+   taObj.value=taObj.value.substring(0,taObj.getAttribute("maxlength"));
+      counter.innerHTML=taObj.getAttribute("maxlength")-taObj.value.length;
+    }
+ return true;
+}
+
+// End of word limiter
+
+
+	function showDiv() {
+	   document.getElementById('detailsEnter').style.display = "block"; 
+	}
+  
+	function HideContent(d) {
+	document.getElementById(d).style.display = "none";
+	}
+	function ShowContent(d) {
+	document.getElementById(d).style.display = "block";
+	}
+	function ReverseDisplay(d) {
+	if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+	else { document.getElementById(d).style.display = "none"; }
+	}
+
+</script>
+
+<script>
+
+// Start of word limiter
+
+function taLimit(event) {
+
+    // IE and Opera
+    if(event.srcElement)
+    {
+	  var taObj=event.srcElement;
+	  if (taObj.value.length>taObj.getAttribute("maxLength")) return false;
+	}
+	// Netscape and Firefox
+	else
+	{
+	  var taObj=event.target;
+	  if (taObj.value.length>taObj.getAttribute("maxLength")) return false;
+	}
+
+	return true;
+}
+
+function taCount(event,counter)
+{
+
+    // IE and Opera
+ if(event.srcElement)
+ {
+      var taObj = event.srcElement;
+   var maxlength = taObj.getAttribute("maxLength");
+
+      if (taObj.value.length > maxlength)
+
+    taObj.value=taObj.value.substring(0,maxlength);
+      counter.innerText=maxlength-taObj.value.length;
+    }
+    // Netscape and Firefox
+    else
+    {
+      var taObj = event.target;
+      if (taObj.value.length > taObj.getAttribute("maxlength"))
+
+   taObj.value=taObj.value.substring(0,taObj.getAttribute("maxlength"));
+      counter.innerHTML=taObj.getAttribute("maxlength")-taObj.value.length;
+    }
+ return true;
+}
+
+// End of word limiter
+	
+	
+</script>
+
+<script type="text/javascript">
+		function beforeCall(form, options){
+        }
+        function ajaxValidationCallback(status, form, json, options){
+            if (console)
+                console.log(status);
+             alert("status");
+            if (status === true) {
+               form.submit();
+            }
+        }
+		jQuery(document).ready(function(){
+            jQuery("#BourkeGardens0416").validationEngine({
+                          ajaxFormValidation: false,
+                onAjaxFormComplete: ajaxValidationCallback
+            });
+            jQuery("#BourkeGardens0416").validationEngine('attach');
+        });
+
+</script>
+
+</head>
+<body bgcolor="#cccccc">
+
+
+
+  <form id="BourkeGardens0416" name="compli" action="http://www.citywesthousingtrust.exvn.com/forms/bourkeGardens0416_2.cfm?id=" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="clientname" value="City West Housing Trust">
+  
+  <input type="hidden" name="website" value="http://www.citywesthousingtrust.org.uk">
+  <input type="hidden" name="articleid" value="1">
+  <input type="hidden" name="campaignid" value="137369">
+  <input type="hidden" name="outgoingid" value="">
+    <input type="hidden" name="source" value="Bourke Gardens 0416">
+
+
+
+<table align="center" bgcolor="#dddddd" border="0" cellpadding="0" cellspacing="0" class="full-width" width="100%">
+	 <tbody><tr>
+												<td height="20" style="line-height: 20px; font-size: 20px;">&nbsp;</td>
+  </tr>
+		<tr>
+			<td align="center" width="100%">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="full-width" width="640" bgcolor="#FFFFFF">
+				 
+					<tbody><tr>
+						<td height="1" style="line-height: 1px; font-size: 1px;" width="20"><img alt="" height="1" src="./bourke-gardens_city-west_files/blank.gif" style="display: block;" width="20"></td>
+						<td width="600">
+						<table align="right" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="full-width" width="600">
+										 
+											<tbody><tr>
+											<td align="center" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 12px;" valign="top" width="164"><a href="http://www.citywesthousingtrust.org.uk/were-about-your-home/finding-a-home/amblecote-gardens" target="_blank"><img alt="Bourke Gardens | City West Housing Trust" border="0" height="100" src="./bourke-gardens_city-west_files/headerlogos4.png" style="display: block;" width="600" class="full-width"></a></td>
+											</tr>
+										 
+						  </tbody></table>
+						</td>
+						<td height="1" style="line-height: 1px; font-size: 1px;" width="20"><img alt="" height="1" src="./bourke-gardens_city-west_files/blank.gif" style="display: block;" width="20"></td>
+					</tr>
+				 
+			</tbody></table>
+			</td>
+		</tr>
+	 
+</tbody></table>
+<table align="center" bgcolor="#dddddd" border="0" cellpadding="0" cellspacing="0" class="full-width" width="100%">
+	 
+		<tbody><tr>
+		  <td align="center" width="100%">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="full-width" width="640" bgcolor="#FFFFFF">
+				 
+					<tbody><tr>
+						<td height="1" style="line-height: 1px; font-size: 1px;" width="20"><img alt="" height="1" src="./bourke-gardens_city-west_files/blank.gif" style="display: block;" width="20"></td>
+						<td width="600">
+						<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="full-width" width="600">
+										 
+											<tbody><tr>
+												<td height="2" style="line-height: 2px; font-size: 2px;" bgcolor="#f26522">&nbsp;</td>
+											</tr>
+											<tr>
+												<td height="20" style="line-height: 20px; font-size: 20px;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td style="color: #515458; font-family: Helvetica, Arial, sans-serif; font-size: 16px;" valign="middle" width="600" align="center"><strong>Please register your interest in our exciting new Extra Care scheme in the heart of Walkden town centre using the form below </strong></td>
+											</tr>
+											<tr>
+												<td height="20" style="line-height: 20px; font-size: 20px;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td height="2" style="line-height: 2px; font-size: 2px;" bgcolor="#f26522">&nbsp;</td>
+											</tr>
+											<tr>
+												<td height="20" style="line-height: 20px; font-size: 20px;">&nbsp;</td>
+											</tr>
+											</tbody></table>
+						<table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="full-width" width="600">
+										 <tbody><tr>
+												<td align="left" style="color: #515458; font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="600">
+	
+	<table class="full-width" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td style="font-family:Arial, Helvetica, sans-serif, Calibri; font-size:12px" class="singleColumn">
+	
+		  
+	<table class="full-width" width="265" border="0" align="left" cellpadding="0" cellspacing="0">
+        
+        <tbody><tr>
+          <td align="left" valign="middle" width="265" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><div align="left"><strong>First Name :</strong></div></td>
+         </tr>
+		  <tr>
+          <td colspan="2" align="center" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px;"></td>
+          </tr>
+          
+        
+		
+        <tr>
+          <td align="left" colspan="2" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">&nbsp;</td>
+          </tr>
+        </tbody></table>
+	
+	<table class="full-width" width="300" border="0" align="right" cellpadding="0" cellspacing="0">
+        
+        <tbody><tr>
+          <td align="left" valign="middle" width="300" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+            <input type="text" size="35" name="firstname" maxlength="250" data-prompt-position="topRight:-150" class="input-box validate[required] space" value="">
+            &nbsp;*</td>
+         </tr>
+		  <tr>
+          <td align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">&nbsp;</td>
+        </tr>
+		  <tr>
+          <td colspan="2" align="center" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px;"></td>
+        </tr></tbody></table>
+    </td>
+    </tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+	<td align="left" style="color: #515458; font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="600">
+<table class="full-width" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td style="padding-right:; font-family:Arial, Helvetica, sans-serif, Calibri; font-size:12px" class="singleColumn">
+	
+		  
+	<table class="full-width" width="265" border="0" align="left" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td align="left" width="265" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><div align="left"><strong>Surname :</strong></div></td>
+        </tr>
+        <tr>
+          <td align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">&nbsp;</td>
+        </tr>
+		  <tr>
+          <td colspan="2" align="center" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px;"></td>
+          </tr>
+        </tbody></table>
+	
+	<table class="full-width" width="300" border="0" align="right" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+         <td width="300" align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><input type="text" size="35" name="surname" maxlength="250" data-prompt-position="topRight:-150" class="input-box validate[required] space" value="">
+            &nbsp;*</td>
+        </tr>
+        <tr>
+          <td align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">&nbsp;</td>
+        </tr>
+		  <tr>
+          <td colspan="2" align="center" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px;"></td>
+        </tr></tbody></table>
+    </td>
+    </tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+	<td align="left" style="color: #515458; font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="600">
+<table class="full-width" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td style="padding-right:; font-family:Arial, Helvetica, sans-serif, Calibri; font-size:12px" class="singleColumn">
+	
+		  
+	<table class="full-width" width="265" border="0" align="left" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td align="left" width="265" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><div align="left"><strong>Email Address :</strong></div></td>
+          </tr>
+		  <tr>
+          <td align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">&nbsp;</td>
+        </tr>
+        </tbody></table>
+	
+	<table class="full-width" width="300" border="0" align="right" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td width="300" align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><input type="text" size="35" name="email" maxlength="250" value="" data-prompt-position="topRight:-150" class="input-box validate[required,custom[email]] space">
+            &nbsp;*</td>
+          </tr>
+		  <tr>
+          <td align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">&nbsp;</td>
+        </tr>
+		  <tr>
+          <td colspan="2" align="center" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px;"></td>
+        </tr></tbody></table>
+    </td>
+    </tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+	<td align="left" style="color: #515458; font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="600">
+<table class="full-width" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td style="padding-right:; font-family:Arial, Helvetica, sans-serif, Calibri; font-size:12px" class="singleColumn">
+	
+		  
+	<table class="full-width" width="265" border="0" align="left" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+          <td align="right" valign="middle" width="265" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><div align="left"><strong>telephone :</strong></div></td>
+          </tr>
+		  <tr>
+          <td align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">&nbsp;</td>
+        </tr>
+        </tbody></table>
+	
+	<table class="full-width" width="300" border="0" align="right" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+          <td align="left" valign="middle" width="300" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><input class="input-box validate[required] space" type="text" size="19" name="phone" maxlength="128" value="">
+            &nbsp;*</td>
+          </tr>
+		  <tr>
+          <td align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">&nbsp;</td>
+        </tr>
+		  <tr>
+          <td colspan="2" align="center" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px;"></td>
+        </tr></tbody></table>
+    </td>
+    </tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+	<td align="left" style="color: #515458; font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="600">
+	<table class="full-width" width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td style="padding-right:; font-family:Arial, Helvetica, sans-serif, Calibri; font-size:12px" class="singleColumn">
+	
+		  
+	<table class="full-width" width="265" border="0" align="left" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+          <td align="right" valign="top" width="265" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;"><div align="left">
+		  <strong>Please supply a brief summary about the level of care and support services required :</strong></div></td>
+          </tr>
+		  <tr>
+          <td colspan="2" align="center" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px;"></td>
+          </tr>
+          
+        
+		
+        <tr>
+          <td align="left" colspan="2" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">&nbsp;</td>
+          </tr>
+        </tbody></table>
+	
+	<table class="full-width" width="300" border="0" align="right" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+         <td align="left" valign="top" width="300" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;">
+           <textarea name="comments" rows="5" cols="30" class="input-box" onkeypress="return taLimit(event);" onkeyup="return taCount(event,document.getElementById(&#39;myCounter&#39;));" maxlength="500"></textarea>
+           <br>
+			  <span style="font-size:10px;">You have <b><span id="myCounter">500</span></b> characters remaining..</span>           </td>
+          </tr>
+		  <tr>
+          <td colspan="2" align="center" valign="middle" style="font-family: Arial, Helvetica, sans-serif; font-size: 10px;"></td>
+        </tr></tbody></table>
+    </td>
+    </tr>
+</tbody></table>
+	<table class="full-width" width="300" border="0" cellspacing="0" cellpadding="0" align="center">
+            
+			<tbody><tr>
+				<td height="20" style="line-height: 20px; font-size: 20px;">&nbsp;</td>
+			</tr>
+			<tr>
+              <td width="300" align="center" valign="top"><input type="submit" name="submit" value="SUBMIT" class="SubmitField buttons"></td>
+            </tr>
+          </tbody></table>
+	</td>
+											</tr>
+											<tr>
+												<td height="20" style="line-height: 20px; font-size: 20px;">&nbsp;</td>
+											</tr>
+											
+					    </tbody></table>						</td>
+						<td height="1" style="line-height: 1px; font-size: 1px;" width="20"><img alt="" height="1" src="./bourke-gardens_city-west_files/blank.gif" style="display: block;" width="20"></td>
+					</tr>
+			</tbody></table>
+			</td>
+		</tr>
+	 
+</tbody></table>
+<table align="center" bgcolor="#dddddd" border="0" cellpadding="0" cellspacing="0" class="full-width" width="100%">
+	 
+		<tbody><tr>
+			<td align="center" width="100%">
+			<table align="center" border="0" cellpadding="0" cellspacing="0" class="full-width" width="640" bgcolor="#515458">
+					
+					<tbody><tr>
+												<td colspan="3" height="2" style="line-height: 2px; font-size: 2px;" bgcolor="#f26522">&nbsp;</td>
+			  </tr>
+											<tr>
+					<td height="1" style="line-height: 1px; font-size: 1px;" width="20"><img alt="" height="1" src="./bourke-gardens_city-west_files/blank(1).gif" style="display: block;" width="20"></td>
+						<td width="600">
+						<table align="left" border="0" cellpadding="0" cellspacing="0" class="full-width" width="600">
+										 
+										<tbody><tr>
+									<td height="20" style="line-height: 20px; font-size: 20px;">&nbsp;</td>
+								</tr>
+								<tr>
+									<td width="600" align="left"><img src="./bourke-gardens_city-west_files/weareForViva1.png" width="153" height="12" style="display:block;" alt="Home | Taken care of Bourke Gardens" border="0"></td>
+								</tr>
+								<tr>
+									<td width="420" height="20" style="line-height: 20px; font-size: 20px;">&nbsp;</td>
+								</tr>
+										 
+						  </tbody></table>						</td>
+						<td height="1" style="line-height: 1px; font-size: 1px;" width="20"><img alt="" height="1" src="./bourke-gardens_city-west_files/blank(1).gif" style="display: block;" width="20"></td>
+					</tr>
+					<tr>
+					<td height="1" style="line-height: 1px; font-size: 1px;" width="20"><img alt="" height="1" src="./bourke-gardens_city-west_files/blank(1).gif" style="display: block;" width="20"></td>
+						<td width="600" class="singleColumn">
+						<table align="left" border="0" cellpadding="0" cellspacing="0" class="full-width" width="420">
+										 
+								
+											<tbody><tr>
+												<td width="420" class="singleColumn">
+												<table align="left" border="0" cellpadding="0" cellspacing="0" class="full-width-margin" width="150">
+													 
+
+														<tbody><tr>
+															<td align="left" style="color:#f26522; font-family: Helvetica, Arial, sans-serif; font-size: 16px;" valign="middle" width="150">Where we are:</td>
+														</tr>
+														<tr>
+															<td height="10" style="line-height: 10px; font-size: 10px;">&nbsp;</td>
+														</tr>
+														<tr>
+															<td align="left" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="150">Bourke Gardens‌</td>
+														</tr>
+														<tr>
+															<td align="left" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="150">Bolton Road‌</td>
+														</tr>
+														<tr>
+															<td align="left" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="150">Walkden‌</td>
+														</tr>
+														<tr>
+															<td align="left" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="150">Salford‌</td>
+														</tr>
+														<tr>
+															<td align="left" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="150">Greater Manchester‌</td>
+														</tr>
+														<tr>
+															<td align="left" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="150">M28 3PZ‌</td>
+														</tr>
+													 
+												</tbody></table>
+
+												<table align="right" border="0" cellpadding="0" cellspacing="0" class="full-width" width="250">
+													 
+														<tbody><tr>
+															<td align="left" style="color: #f26522; font-family: Helvetica, Arial, sans-serif; font-size: 16px;" valign="middle" width="250">Get in touch:</td>
+														</tr>
+														<tr>
+															<td height="10" style="line-height: 10px; font-size: 10px;">&nbsp;</td>
+														</tr>
+														<tr>
+															<td align="left" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="250">t: <a href="tel:03001235522" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#f26522; -webkit-text-size-adjust:none;"><strong>0300 123 5522</strong></a></td>
+														</tr>
+														<tr>
+															<td align="left" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="250">e: <a href="mailto:bourkegardens@citywest.org.uk" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#f26522; -webkit-text-size-adjust:none;"><strong>bourkegardens@citywest.org.uk</strong></a></td>
+														</tr>
+														<tr>
+															<td align="left" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="250">w: <a href="http://www.citywesthousingtrust.org.uk/" target="_blank" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#f26522; -webkit-text-size-adjust:none;"><strong>www.citywesthousingtrust.org.uk</strong></a>	</td>
+														</tr>
+														<tr>
+															<td height="8" style="line-height: 8px; font-size: 8px;">&nbsp;</td>
+														</tr>
+														<tr>
+															<td align="left" style="color: rgb(255, 255, 255); font-family: Helvetica, Arial, sans-serif; font-size: 14px;" valign="middle" width="250"><table class="full-width" width="68" border="0" cellspacing="0" cellpadding="0">
+				  <tbody><tr>
+					<td width="29" valign="top"><a href="https://twitter.com/citywesthousing" target="_blank" title="@citywesthousing"><img src="./bourke-gardens_city-west_files/10.jpg" width="29" height="29" style="display:block;" alt="F" border="0"></a></td>
+					<td width="10"><img alt="" height="1" src="./bourke-gardens_city-west_files/blank(1).gif" style="display: block;" width="10"></td>
+					<td width="29" valign="top"><a href="https://www.facebook.com/citywesthousing" target="_blank" title="facebook.com/citywesthousing"><img src="./bourke-gardens_city-west_files/11.jpg" width="29" height="29" style="display:block;" alt="F" border="0"></a></td>
+				  </tr>
+				</tbody></table>				</td>
+														</tr>
+													 
+												</tbody></table>												</td>
+											</tr>
+											<tr>
+									<td height="20" style="line-height: 20px; font-size: 20px;">&nbsp;</td>
+								</tr>
+										 
+						  </tbody></table>						</td>
+						<td height="1" style="line-height: 1px; font-size: 1px;" width="20"><img alt="" height="1" src="./bourke-gardens_city-west_files/blank(1).gif" style="display: block;" width="20"></td>
+					</tr>
+								<tr>
+									<td colspan="3" height="10" style="line-height: 10px; font-size: 10px;" bgcolor="#dddddd">&nbsp;</td>
+								</tr>
+			</tbody></table>
+			</td>
+		</tr>
+	 
+</tbody></table>
+</form>
+
+
+
+</body></html>
